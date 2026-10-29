@@ -1,0 +1,78 @@
+{
+  "name": "rn-universal-a11y-design-system",
+  "version": "1.0.0",
+  "description": "Accessible, compiler-checked React Native design-system primitives.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "react-native": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "react-native": "./src/index.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./testing": {
+      "types": "./dist/testing/expectAccessibleElement.d.ts",
+      "require": "./dist/testing/expectAccessibleElement.js",
+      "default": "./dist/testing/expectAccessibleElement.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "test": "jest --runInBand",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajkhatibi/rn-universal-a11y-design-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.11.0"
+  },
+  "peerDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@testing-library/react-native": "^13.3.3",
+    "react": "^19.1.0",
+    "react-native": "^0.81.0",
+    "react-test-renderer": "^19.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@jest/globals": {
+      "optional": true
+    },
+    "@testing-library/react-native": {
+      "optional": true
+    },
+    "react-test-renderer": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "7.29.7",
+    "@eslint/js": "9.39.5",
+    "@jest/globals": "29.7.0",
+    "@react-native/babel-preset": "0.81.5",
+    "@testing-library/react-native": "13.3.3",
+    "@types/node": "22.20.5",
+    "@types/react": "19.1.17",
+    "@types/react-test-renderer": "19.1.0",
+    "babel-jest": "29.7.0",
+    "eslint": "9.39.5",
+    "jest": "29.7.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-test-renderer": "19.1.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1"
+  }
+}
